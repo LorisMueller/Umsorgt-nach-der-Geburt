@@ -115,7 +115,7 @@ nav {
 }
 
 .video-background {
-    margin-top: 10vh;
+    padding-top: 10vh;
     width: 100%;
 }
 
@@ -132,6 +132,11 @@ nav {
     background-color: #041f29;
 }
 
+.testtest {
+    display: block;
+    overflow: hidden;
+}
+
 #first-picture {
     background-image: url(../Dateien/Images/portrait_test2.jpg);
     filter: grayscale(0%);
@@ -139,8 +144,8 @@ nav {
     transition: .5s ease;
 }
 
-#first-picture:hover {
-    filter: grayscale(0%);
+.testtest:hover #first-picture {
+    transform: scale(1.05);
 }
 
 #first-picture:hover #first-overlay {
