@@ -130,9 +130,19 @@ nav {
     height: 100%;
     width: 50vw;
     background-color: #041f29;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
 }
 
-.testtest {
+.first-h1 {
+    background-color: #1c36b8;
+    padding-left: 5px;
+    padding-right: 10px;
+}
+
+.zoom-container {
     display: block;
     overflow: hidden;
 }
@@ -144,7 +154,7 @@ nav {
     transition: .5s ease;
 }
 
-.testtest:hover #first-picture {
+#first-zoom:hover #first-picture {
     transform: scale(1.05);
 }
 
@@ -175,6 +185,10 @@ nav {
 
 #second-picture:hover {
     filter: grayscale(0%);
+}
+
+#second-zoom:hover #second-picture {
+    transform: scale(1.05);
 }
 
 #second-picture:hover #second-overlay {
