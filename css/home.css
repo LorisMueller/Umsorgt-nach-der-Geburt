@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
 body {
     margin: 0;
     padding: 0;
@@ -66,6 +69,42 @@ nav {
     flex-direction: row;
 }
 
+.paragraph {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.paragraph-container {
+    font-family: 'Ubuntu', sans-serif;
+    padding: 0;
+    margin: 30px;
+    margin-left: 16%;
+    margin-right: 16%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.paragraph-title {
+    margin-bottom: 0;
+    margin-top: -12px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    background-color: #12CFFC;
+}
+
+.paragraph-container h2 {
+    text-align: center;
+}
+
 /* Start -- Header - Video - Title */
 
 #header {
@@ -127,6 +166,7 @@ nav {
 }
 
 .text {
+    padding-top: 25px;
     height: 100%;
     width: 50vw;
     background-color: #041f29;
@@ -136,15 +176,26 @@ nav {
     color: white;
 }
 
-.first-h1 {
-    background-color: #1c36b8;
-    padding-left: 5px;
-    padding-right: 10px;
-}
-
 .zoom-container {
     display: block;
     overflow: hidden;
+}
+
+.text-h1 {
+    font-family: '', sans-serif;
+    background-color: #12CFFC;
+    color: #041f29;
+    padding-left: 5px;
+    padding-right: 7px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.h4-container {
+    height: 83%;
+    margin-top: -30px;
+    padding-left: 6%;
+    padding-right: 6%;
 }
 
 #first-picture {
@@ -174,6 +225,13 @@ nav {
     transition: .5s ease;
     overflow: hidden;
     background-color: rgba(28, 61, 230, 0.24);
+}
+
+#first-h4 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 160%;
+    line-height: 40px;
+    text-align: center;
 }
 
 #second-picture {
@@ -207,6 +265,13 @@ nav {
     transition: .5s ease;
     overflow: hidden;
     background-color: rgba(18, 207, 252, 0.35);
+}
+
+#second-h4 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 160%;
+    line-height: 40px;
+    text-align: center;
 }
 
 #footer {
