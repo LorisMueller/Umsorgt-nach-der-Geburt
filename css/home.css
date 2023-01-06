@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
-
 body {
     margin: 0;
     padding: 0;
     height: 100%;
     font-family: 'Raleway', sans-serif;
+    background-color: #041f29;
 }
 
 nav {
@@ -15,6 +15,10 @@ nav {
     position: fixed;
     z-index: 100;
     box-shadow: 0 4px 4px 0 rgb(18 207 252 / 7%);
+}
+
+a {
+    text-decoration: none;
 }
 
 .nav-item-list {
@@ -73,9 +77,10 @@ nav {
     padding: 0;
     margin: 0;
     width: 100%;
-    height: 70vh;
+    height: 50%;
     display: flex;
     flex-direction: row;
+    background-color: white;
 }
 
 .paragraph-container {
@@ -104,6 +109,7 @@ nav {
 .paragraph-container h2 {
     text-align: center;
 }
+
 
 /* Start -- Header - Video - Title */
 
@@ -143,13 +149,13 @@ nav {
     background-color: transparent;
 }
 
-.header-textContainer:hover > .header-textBackground {
+.header-textContainer:hover>.header-textBackground {
     transition: 1.5s ease;
     background-color: #041f29;
     mix-blend-mode: multiply;
 }
 
-.header-textContainer:hover > .header-text {
+.header-textContainer:hover>.header-text {
     font-style: italic;
 }
 
@@ -157,6 +163,7 @@ nav {
     padding-top: 10vh;
     width: 100%;
 }
+
 
 /* End -- Header - Video - Title */
 
@@ -167,7 +174,6 @@ nav {
 
 .text {
     padding-top: 25px;
-    height: 100%;
     width: 50vw;
     background-color: #041f29;
     display: flex;
@@ -275,6 +281,153 @@ nav {
 }
 
 #footer {
+    /*border: 1px solid red;*/
     background-color: #041f29;
-    height: 100vh;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5vh;
+}
+
+.footer_waves {
+    position: relative;
+    width: 100%;
+    height: 15vh;
+    margin-bottom: -7px;
+    min-height: 100px;
+    max-height: 150px;
+}
+
+.footer_flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.footer_content {
+    position: relative;
+    height: 100%;
+    text-align: center;
+    background-color: white;
+}
+
+.footer_content_div {
+    margin: 50px;
+}
+
+.footer_content_text {
+    font-weight: 600;
+    font-size: large;
+    font-family: '', sans-serif;
+    background-color: #12CFFC;
+    color: #041f29;
+    padding-left: 5px;
+    padding-right: 7px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    position: relative;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+.footer_content_text::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: currentColor;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease-in-out;
+}
+
+.footer_content_text:hover::before {
+    transform: scaleX(1);
+}
+
+.footer_content_text_active {
+    font-weight: 600;
+    font-size: large;
+    font-family: '', sans-serif;
+    background-color: #12CFFC;
+    color: #041f29;
+    padding-left: 5px;
+    padding-right: 7px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    position: relative;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+.footer_content_text_active::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: currentColor;
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: transform 0.3s ease-in-out;
+}
+
+.footer_content_text_active:hover::before {
+    transform: scaleX(0);
+}
+
+
+/*Animation*/
+
+.footer_parallax>use {
+    animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
+}
+
+.footer_parallax>use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 12s;
+}
+
+.footer_parallax>use:nth-child(2) {
+    animation-delay: -4s;
+    animation-duration: 15s;
+}
+
+.footer_parallax>use:nth-child(3) {
+    animation-delay: -6s;
+    animation-duration: 18s;
+}
+
+.footer_parallax>use:nth-child(4) {
+    animation-delay: -8s;
+    animation-duration: 23s;
+}
+
+@keyframes move-forever {
+    0% {
+        transform: translate3d(-90px, 0, 0);
+    }
+    100% {
+        transform: translate3d(85px, 0, 0);
+    }
+}
+
+
+/*For Mobile*/
+
+@media (max-width: 768px) {
+    .waves {
+        height: 40px;
+        min-height: 40px;
+    }
+    .content {
+        height: 30vh;
+    }
+    h1 {
+        font-size: 24px;
+    }
 }
