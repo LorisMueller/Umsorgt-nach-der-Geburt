@@ -120,27 +120,27 @@ a {
 }
 
 .paragraph-container .cards:nth-child(1) {
-    background: linear-gradient(45deg, #3503ad, #f7308c);
+    background: linear-gradient(45deg, #1C3DE6, #12CFFC);
 }
 
 .paragraph-container .cards:nth-child(1) .overlay {
-    background: linear-gradient(45deg, #3503ad, #f7308c);
+    background: linear-gradient(45deg, #1C3DE6, #12CFFC);
 }
 
 .paragraph-container .cards:nth-child(2) {
-    background: linear-gradient(45deg, #ccff00, #09afff);
+    background: linear-gradient(45deg, #12CCFC, #7E11F2);
 }
 
 .paragraph-container .cards:nth-child(2) .overlay {
-    background: linear-gradient(45deg, #ccff00, #09afff);
+    background: linear-gradient(45deg, #12CCFC, #7E11F2);
 }
 
 .paragraph-container .cards:nth-child(3) {
-    background: linear-gradient(45deg, #e91e63, #ffeb3d);
+  background: linear-gradient(45deg, #7E11F2, #1C3DE6);
 }
 
 .paragraph-container .cards:nth-child(3) .overlay {
-    background: linear-gradient(45deg, #e91e63, #ffeb3d);
+  background: linear-gradient(45deg, #7E11F2, #1C3DE6);
 }
 
 .paragraph-container .cards .imgBx {
