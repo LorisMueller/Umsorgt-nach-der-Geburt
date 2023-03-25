@@ -1,0 +1,207 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Raleway', sans-serif;
+}
+
+nav {
+    width: 100%;
+    height: 10vh;
+    background-color: #041f29;
+    position: fixed;
+    z-index: 100;
+    box-shadow: 0 4px 4px 0 rgb(18 207 252 / 7%);
+}
+
+.nav-item-list {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-item-list li {
+    list-style-type: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    font-size: 200%;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+
+/*nav-item-list children 1*/
+
+.nav-item-list li:nth-child(1) {
+    width: 10vw;
+}
+
+.nav-item-list li:nth-child(1) a {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.back-icon {
+    height: 30px;
+    width: 30px;
+}
+
+.nav-item-list li:nth-child(3) {
+    width: 10vw;
+}
+
+.section {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+}
+
+
+/* Start -- Header - Video - Title */
+
+#header {
+    background-color: #041f29;
+    height: 100vh;
+}
+
+.header-textContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #041f29;
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 200%;
+    font-weight: 900;
+    mix-blend-mode: multiply;
+    transition: 1.5s ease;
+}
+
+.header-textBackground {
+    padding: 0px 10px 0px 10px;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-textContainer:hover {
+    transition: 1.5s ease;
+    mix-blend-mode: unset;
+    background-color: transparent;
+}
+
+.header-textContainer:hover>.header-textBackground {
+    transition: 1.5s ease;
+    background-color: #041f29;
+    mix-blend-mode: multiply;
+}
+
+.header-textContainer:hover>.header-text {
+    font-style: italic;
+}
+
+.video-background {
+    padding-top: 10vh;
+    width: 100%;
+}
+
+
+/* End -- Header - Video - Title */
+
+.picture {
+    height: 100%;
+    width: 50vw;
+}
+
+.text {
+    height: 100%;
+    width: 50vw;
+    background-color: white;
+}
+
+.zoom-container {
+    display: block;
+    overflow: hidden;
+}
+
+#first-picture {
+    background-image: url(../Dateien/Images/portrait_test2.jpg);
+    filter: grayscale(0%);
+    background-size: 100% 100%;
+    transition: .5s ease;
+}
+
+#first-zoom:hover #first-picture {
+    transform: scale(1.05);
+}
+
+#first-picture:hover #first-overlay {
+    opacity: 0;
+    cursor: pointer;
+}
+
+#first-overlay {
+    backdrop-filter: grayscale(100%);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    transition: .5s ease;
+    overflow: hidden;
+    background-color: rgba(28, 61, 230, 0.24);
+}
+
+#second-picture {
+    background-image: url(../Dateien/Images/portrait_test2.jpg);
+    filter: grayscale(0%);
+    background-size: 100% 100%;
+    transition: .5s ease;
+}
+
+#second-picture:hover {
+    filter: grayscale(0%);
+}
+
+#second-zoom:hover #second-picture {
+    transform: scale(1.05);
+}
+
+#second-picture:hover #second-overlay {
+    opacity: 0;
+    cursor: pointer;
+}
+
+#second-overlay {
+    backdrop-filter: grayscale(100%);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    transition: .5s ease;
+    overflow: hidden;
+    background-color: rgba(18, 207, 252, 0.35);
+}
+
+#footer {
+    background-color: #041f29;
+    height: 100vh;
+}
