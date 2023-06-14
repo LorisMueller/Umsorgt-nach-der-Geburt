@@ -276,7 +276,7 @@ a {
     opacity: 1;
     transition: .5s ease;
     overflow: hidden;
-    background-color: rgba(18, 207, 252, 0.35);
+    background-color: rgba(18, 207, 252, 0.3);
 }
 
 #second-h4 {
@@ -287,7 +287,6 @@ a {
 }
 
 #footer {
-    /*border: 1px solid red;*/
     background-color: #041f29;
     height: 40vh;
     display: flex;
