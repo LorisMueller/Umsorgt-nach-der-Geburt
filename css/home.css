@@ -173,24 +173,28 @@ a {
 }
 
 .text {
-    padding-top: 25px;
     width: 50vw;
     background-color: #041f29;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     color: white;
+    display: flex;
+    align-items: center;
 }
 
-.zoom-container {
-    display: block;
-    overflow: hidden;
+.text-container {
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    flex-direction: column;
 }
 
 .text-h1 {
     font-family: '', sans-serif;
-    background-color: #12CFFC;
     color: #041f29;
+    display: inline-block;
+}
+
+.text-h1 span {
+    background-color: #12CFFC;
     padding-left: 5px;
     padding-right: 7px;
     padding-top: 3px;
@@ -199,9 +203,18 @@ a {
 
 .h4-container {
     height: 83%;
-    margin-top: -30px;
-    padding-left: 6%;
-    padding-right: 6%;
+}
+
+#first-h4 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 120%;
+    line-height: 25px;
+    text-align: left;
+}
+
+.zoom-container {
+    display: block;
+    overflow: hidden;
 }
 
 #first-picture {
@@ -231,13 +244,6 @@ a {
     transition: .5s ease;
     overflow: hidden;
     background-color: rgba(28, 61, 230, 0.24);
-}
-
-#first-h4 {
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 160%;
-    line-height: 40px;
-    text-align: center;
 }
 
 #second-picture {
