@@ -39,7 +39,7 @@ a {
     text-decoration: none;
     color: white;
     font-size: 200%;
-    font-family: 'Montserrat Alternates', sans-serif;
+    font-family: 'Montserrat Alternates', 'sans-serif';
 }
 
 
@@ -68,7 +68,7 @@ a {
     padding: 0;
     margin: 0;
     width: 100%;
-    height: 90vh;
+    height: 80vh;
     display: flex;
     flex-direction: row;
 }
@@ -301,11 +301,12 @@ a {
 
 .text {
     padding-top: 25px;
+    padding-left: 10px;
     width: 50vw;
     background-color: #041f29;
     display: flex;
+    justify-content: center;
     flex-direction: column;
-    align-items: center;
     color: white;
 }
 
@@ -327,14 +328,19 @@ a {
 .h4-container {
     height: 83%;
     margin-top: -30px;
-    padding-left: 6%;
-    padding-right: 6%;
+}
+
+#first-h4 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 120%;
+    line-height: 25px;
+    text-align: left;
 }
 
 #first-picture {
-    background-image: url(../Dateien/Images/portrait_test2.jpg);
+    background-image: url(../Dateien/Images/wochenbett/ernaehrung_neugeborenes.png);
     filter: grayscale(0%);
-    background-size: 100% 100%;
+    background-size: cover;
     transition: .5s ease;
 }
 
@@ -360,17 +366,10 @@ a {
     background-color: rgba(28, 61, 230, 0.24);
 }
 
-#first-h4 {
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 160%;
-    line-height: 40px;
-    text-align: center;
-}
-
 #second-picture {
-    background-image: url(../Dateien/Images/portrait_test2.jpg);
+    background-image: url(../Dateien/Images/wochenbett/kosten1.jpg);
     filter: grayscale(0%);
-    background-size: 100% 100%;
+    background-size: cover;
     transition: .5s ease;
 }
 
@@ -405,6 +404,17 @@ a {
     font-size: 160%;
     line-height: 40px;
     text-align: center;
+}
+
+#third-picture {
+    background-image: url(../Dateien/Images/wochenbett/kindsverlust.jpg);
+    filter: grayscale(0%);
+    background-size: cover;
+    transition: .5s ease;
+}
+
+#third-zoom:hover #third-picture {
+    transform: scale(1.05);
 }
 
 #footer {
