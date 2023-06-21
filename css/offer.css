@@ -238,6 +238,7 @@ a {
 
 .title-subtext {
     color: #041f29;
+    text-align: center;
 }
 
 .content-section {
@@ -356,7 +357,7 @@ a {
     padding: 3px;
 }
 
-.content-text-tiny .content-text-title-laser {
+.content-text-tiny .content-text-title-tiny {
     padding-bottom: 5px;
 }
 
@@ -393,6 +394,54 @@ a {
     align-items: center;
     height: (70vh, 100%);
     border-radius: 1px;
+}
+
+.content-part-beratung {
+    width: 45%;
+    height: 90%;
+    margin: 1%;
+}
+
+.content-text-beratung {
+    font-size: 110%;
+    margin-top: 20px;
+}
+
+.content-text-beratung p {
+    margin: 0;
+    padding: 3px;
+}
+
+.content-text-beratung .content-text-title-beratung {
+    padding-bottom: 5px;
+}
+
+.title-section-beratung {
+    width: 100%;
+    height: 10vh;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.final-section-beratung {
+    width: 100%;
+    height: 5vh;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.final-section-beratung p {
+    margin: 0;
+    padding-top: 5px;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 /* Footer */
