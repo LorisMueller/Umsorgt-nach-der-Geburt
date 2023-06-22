@@ -113,12 +113,89 @@ a {
 /* CONTENT */
 
 .content {
-    height: 90vh;
+    padding-top: 10vh;
+    height: 130vh;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content_top {
+    height: 70%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.content_left {
+    height: 100%;
+    width: 35%;
+    margin-right: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.personal_card {
+    height: 90%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.content_right {
+    height: 100%;
+    width: 48%;
+    margin-left: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.maps_card {
+    height: 55%;
+    width: 100%;
+    border: 3px solid transparent;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.links_card {
+    margin-top: 10px;
+    height: calc(35% - 10px);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.content_bottom {
+    height: 30%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.book_section {
+    
 }
 
 /* FOOTER */
+
 #footer {
     background-color: #041f29;
     height: 40vh;
