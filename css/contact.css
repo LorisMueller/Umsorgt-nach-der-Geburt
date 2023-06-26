@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 body {
     margin: 0;
     padding: 0;
@@ -141,7 +143,7 @@ a {
 }
 
 .personal_card {
-    height: 90%;
+    height: calc(90% + 10px);
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -149,6 +151,11 @@ a {
     align-items: center;
     background-color: white;
     border-radius: 10px;
+}
+
+.personal_info {
+    margin: 10px;
+    text-align: center;
 }
 
 .content_right {
@@ -170,15 +177,26 @@ a {
 }
 
 .links_card {
-    margin-top: 10px;
-    height: calc(35% - 10px);
+    height: 35%;
+    padding-top: 10px;
     width: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
+}
+
+.links_card .link {
+    margin: 3px;
+    padding: 10px;
     background-color: white;
     border-radius: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.links_card .link a {
+    text-decoration: none;
+    color: black;
 }
 
 .content_bottom {
@@ -191,7 +209,56 @@ a {
 }
 
 .book_section {
-    
+    height: 100%;
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.book_card {
+    height: 80%;
+    width: 17%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.book_card .image {
+    height: 70%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.book_card .image img {
+    height: 93%;
+    object-fit: cover;
+}
+
+.book_card .image .big {
+    height: 100%;
+    object-fit: cover;
+}
+
+.book_card .content {
+    padding: 0;
+    height: 30%;
+    width: auto;
+    text-align: center;
+}
+
+.book_card .content .content_title {
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Ubuntu', sans-serif;
+    color: #041f29;
 }
 
 /* FOOTER */
@@ -326,6 +393,7 @@ a {
     0% {
         transform: translate3d(-90px, 0, 0);
     }
+
     100% {
         transform: translate3d(85px, 0, 0);
     }
@@ -339,9 +407,11 @@ a {
         height: 40px;
         min-height: 40px;
     }
+
     .content {
         height: 30vh;
     }
+
     h1 {
         font-size: 24px;
     }
