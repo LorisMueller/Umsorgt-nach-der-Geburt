@@ -43,9 +43,6 @@ a {
     font-family: 'Montserrat Alternates', sans-serif;
 }
 
-
-/*nav-item-list children 1*/
-
 .nav-item-list li:nth-child(1) {
     width: 10vw;
 }
@@ -165,8 +162,10 @@ a {
     width: 100%;
 }
 
-
-/* Content */
+/* Remove Mobile Header */
+#header-mobile {
+    display: none;
+}
 
 /* Schlafberatung */
 
@@ -182,7 +181,6 @@ a {
     height: (70vh, 100%);
     border-radius: 1px;
 }
-
 
 .title-section {
     width: 100%;
@@ -225,7 +223,6 @@ a {
     align-items: center;
     text-align: center;
     border-radius: 20px;
-    /* background-color: rgb(207, 180, 131); */
     background-color: rgba(255, 255, 255, 0.269);
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
@@ -545,7 +542,6 @@ a {
     transform: scaleX(0);
 }
 
-
 /*Animation*/
 
 .footer_parallax>use {
@@ -582,10 +578,47 @@ a {
     }
 }
 
+/* Media Queries for mobile */
 
-/*Media Queries for mobile*/
+@media only screen and (max-width: 768px) {
 
-@media (max-width: 768px) {
+    #header {
+        display: none;
+    }
+
+    #header-mobile {
+        display: block;
+        overflow: hidden;
+    }
+
+    .video-background-mobile {
+        margin-top: 10vh;
+        height: 30vh;
+        object-fit: cover;
+    }
+
+    .header-textContainer-mobile {
+        margin-top: 10vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #041f29;
+        height: 30vh;
+        width: 100%;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 100%;
+        font-weight: 900;
+        mix-blend-mode: multiply;
+        text-align: center;
+    }
+
+    .header-text-mobile {
+        font-style: italic;
+    }
+
     body {
         font-size: 16px;
     }
@@ -595,7 +628,6 @@ a {
     }
 
     #schlafberatung {
-        margin-top: 10vh;
         height: 130vh;
     }
 

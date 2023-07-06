@@ -43,9 +43,6 @@ a {
     font-family: 'Montserrat Alternates', sans-serif;
 }
 
-
-/*nav-item-list children 1*/
-
 .nav-item-list li:nth-child(1) {
     width: 10vw;
 }
@@ -111,7 +108,6 @@ a {
     text-align: center;
 }
 
-
 /* Start -- Header - Video - Title */
 
 #header {
@@ -166,11 +162,9 @@ a {
 }
 
 /* Remove Mobile Header */
-
 #header-mobile {
     display: none;
 }
-
 
 /* End -- Header - Video - Title */
 
@@ -392,7 +386,6 @@ a {
     transform: scaleX(0);
 }
 
-
 /*Animation*/
 
 .footer_parallax>use {
@@ -429,25 +422,11 @@ a {
     }
 }
 
+/* Media Queries for mobile */
+
 @media only screen and (max-width: 768px) {
 
     #header {
-        display: none;
-    }
-
-    .video-background {
-        display: none;
-    }
-
-    .header-textBackground {
-        display: none;
-    }
-
-    .header-textContainer {
-        display: none;
-    }
-
-    .header-text {
         display: none;
     }
 
@@ -483,7 +462,6 @@ a {
     .header-text-mobile {
         font-style: italic;
     }
-
 
     .waves {
         height: 40px;
