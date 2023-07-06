@@ -583,7 +583,7 @@ a {
 }
 
 
-/*For Mobile*/
+/*Media Queries for mobile*/
 
 @media (max-width: 768px) {
     body {
@@ -594,12 +594,9 @@ a {
         font-size: 150%;
     }
 
-    .section {
-        height: 110vh;
-    }
-
     #schlafberatung {
         margin-top: 10vh;
+        height: 130vh;
     }
 
     .title-text {
@@ -676,8 +673,9 @@ a {
     }
 
     #laser {
-        height: 93vh;
+        height: 110vh;
         margin-top: 10vh;
+
     }
 
     #laser .content-section {
@@ -725,7 +723,7 @@ a {
     }
 
     #beratung {
-        height: 100vh;
+        height: 120vh;
         margin-top: 15vh;
     }
 
