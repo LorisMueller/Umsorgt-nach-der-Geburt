@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
 body {
     margin: 0;
     padding: 0;
@@ -218,9 +219,9 @@ a {
 }
 
 #first-picture {
-    background-image: url(../Dateien/Images/portrait_test2.jpg);
+    background-image: url(../Dateien/Images/Portrait/portrait_1.jpg);
     filter: grayscale(0%);
-    background-size: 100% 100%;
+    background-size: cover;
     transition: .5s ease;
 }
 
@@ -247,9 +248,9 @@ a {
 }
 
 #second-picture {
-    background-image: url(../Dateien/Images/portrait_test2.jpg);
+    background-image: url(../Dateien/Images/Portrait/portrait_2.jpg);
     filter: grayscale(0%);
-    background-size: 100% 100%;
+    background-size: cover;
     transition: .5s ease;
 }
 
@@ -416,6 +417,7 @@ a {
     0% {
         transform: translate3d(-90px, 0, 0);
     }
+
     100% {
         transform: translate3d(85px, 0, 0);
     }
@@ -429,10 +431,100 @@ a {
         height: 40px;
         min-height: 40px;
     }
+
     .content {
         height: 30vh;
     }
+
     h1 {
         font-size: 24px;
+    }
+}
+
+/* Add the following code at the end of the CSS file */
+
+@media only screen and (max-width: 768px) {
+
+    /* Mobile styles for navigation */
+    .nav-item-list {
+        justify-content: space-evenly;
+    }
+
+    .nav-item-list li {
+        font-size: 150%;
+    }
+
+    /* Mobile styles for header */
+    .header-textContainer {
+        font-size: 150%;
+        height: 50vh;
+    }
+
+    /* Mobile styles for paragraph */
+    .paragraph-container {
+        margin: 10px;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    #header {
+        height: 70vh;
+    }
+
+    /* Mobile styles for sections */
+    .section {
+        flex-direction: column;
+        height: auto;
+    }
+
+    /* Mobile styles for zoom containers */
+    .zoom-container {
+        width: 100%;
+    }
+
+    /* Mobile styles for pictures */
+    .picture {
+        width: 100%;
+        height: 50vh;
+    }
+
+    /* Mobile styles for text */
+    .text {
+        width: 100%;
+    }
+
+    /* Mobile styles for text container */
+    .text-container {
+        padding: 15px;
+    }
+
+    /* Mobile styles for h1 */
+    .text-h1 {
+        font-size: 180%;
+    }
+
+    /* Mobile styles for h4 */
+    .h4-container {
+        height: auto;
+    }
+
+    /* Mobile styles for footer */
+    #footer {
+        height: auto;
+    }
+
+    /* Mobile styles for footer content */
+    .footer_content {
+        flex-wrap: wrap;
+    }
+
+    .footer_content_div {
+        width: 50%;
+        padding: 10px;
+    }
+
+    .footer_content_text_active,
+    .footer_content_text {
+        font-size: 130%;
     }
 }

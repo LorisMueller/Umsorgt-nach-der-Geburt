@@ -143,7 +143,7 @@ a {
 }
 
 .personal_card {
-    height: calc(90% + 10px);
+    height: 90%;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -153,8 +153,24 @@ a {
     border-radius: 10px;
 }
 
+.personal_title {
+    font-family: '', sans-serif;
+    color: #041f29;
+    display: inline-block;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.personal_title span {
+    background-color: #12CFFC;
+    padding-left: 5px;
+    padding-right: 7px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
 .personal_info {
-    margin: 10px;
+    margin: 3px;
     text-align: center;
 }
 
@@ -177,8 +193,8 @@ a {
 }
 
 .links_card {
-    height: 35%;
-    padding-top: 10px;
+    height: calc(35% - 30px);
+    padding-top: 30px;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -186,7 +202,8 @@ a {
 
 .links_card .link {
     margin: 3px;
-    padding: 10px;
+    padding-right: 13px;
+    padding-left: 13px;
     background-color: white;
     border-radius: 10px;
     text-align: center;
@@ -258,6 +275,10 @@ a {
     font-size: 18px;
     font-weight: 600;
     font-family: 'Ubuntu', sans-serif;
+    color: #041f29;
+}
+
+.book_card .content .content_subtitle {
     color: #041f29;
 }
 
@@ -408,11 +429,65 @@ a {
         min-height: 40px;
     }
 
-    .content {
-        height: 30vh;
-    }
-
     h1 {
         font-size: 24px;
+    }
+
+    .maps_card,
+    .book_section {
+        display: none;
+    }
+
+    .content {
+        padding-top: 10vh;
+    }
+
+    .content_top {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .content_left {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .content_right {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        display: inline;
+    }
+    
+    .personal_card {
+        margin-top: 10vh;
+        height: 80vh;
+    }
+
+    .links_card {
+        margin-top: 5vh;
+        padding: 0;
+    }
+
+
+
+
+
+    #footer {
+        height: auto;
+    }
+
+    .footer_content {
+        flex-wrap: wrap;
+    }
+
+    .footer_content_div {
+        width: 50%;
+        padding: 10px;
+    }
+
+    .footer_content_text_active,
+    .footer_content_text {
+        font-size: 130%;
     }
 }
