@@ -628,7 +628,8 @@ a {
     }
 
     #schlafberatung {
-        height: 130vh;
+        height: 100%;
+        padding-bottom: 5vh;
     }
 
     .title-text {
@@ -651,7 +652,6 @@ a {
         height: 8vh;
         margin-top: 40px;
     }
-
 
     .paragraph-container {
         margin: 15px;
@@ -705,18 +705,21 @@ a {
     }
 
     #laser {
-        height: 110vh;
+        height: 100%;
+        padding-bottom: 7vh;
         margin-top: 10vh;
-
     }
 
     #laser .content-section {
         margin-top: 3vh;
+        display: flex;
+        align-items: start;
     }
 
     .content-part-tiny {
         width: 40%;
         margin-right: 5%;
+        margin-top: 30px;
     }
 
     .content-text-tiny {
@@ -735,7 +738,7 @@ a {
 
     .content-text-laser {
         font-size: 90%;
-        margin-top: 10px;
+        margin-top: 30px;
     }
 
     .content-text-laser span {
@@ -755,7 +758,8 @@ a {
     }
 
     #beratung {
-        height: 120vh;
+        height: 100%;
+        padding-bottom: 7vh;
         margin-top: 15vh;
     }
 
@@ -765,6 +769,9 @@ a {
 
     #beratung .content-section {
         margin-top: 10vh;
+        display: flex;
+        align-items: start;
+        margin-top: 100px;
     }
 
     .content-part-beratung {
