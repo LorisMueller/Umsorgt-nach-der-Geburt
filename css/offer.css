@@ -1,0 +1,821 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Raleway', sans-serif;
+    background-color: #041f29;
+}
+
+nav {
+    width: 100%;
+    height: 10vh;
+    background-color: #041f29;
+    position: fixed;
+    z-index: 100;
+    box-shadow: 0 4px 4px 0 rgb(18 207 252 / 7%);
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav-item-list {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-item-list li {
+    list-style-type: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    font-size: 200%;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.nav-item-list li:nth-child(1) {
+    width: 10vw;
+}
+
+.nav-item-list li:nth-child(1) a {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.back-icon {
+    height: 30px;
+    width: 30px;
+}
+
+.nav-item-list li:nth-child(3) {
+    width: 10vw;
+}
+
+.section {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.paragraph {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+}
+
+.paragraph-container {
+    font-family: 'Ubuntu', sans-serif;
+    padding: 0;
+    margin: 30px;
+    margin-left: 16%;
+    margin-right: 16%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.paragraph-title {
+    margin-bottom: 0;
+    margin-top: -12px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    background-color: #12CFFC;
+}
+
+.paragraph-container h2 {
+    text-align: center;
+}
+
+
+/* Start -- Header - Video - Title */
+
+#header {
+    background-color: #041f29;
+    height: 100vh;
+}
+
+.header-textContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #041f29;
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 200%;
+    font-weight: 900;
+    mix-blend-mode: multiply;
+    transition: 1.5s ease;
+}
+
+.header-textBackground {
+    padding: 0px 10px 0px 10px;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-textContainer:hover {
+    transition: 1.5s ease;
+    mix-blend-mode: unset;
+    background-color: transparent;
+}
+
+.header-textContainer:hover>.header-textBackground {
+    transition: 1.5s ease;
+    background-color: #041f29;
+    mix-blend-mode: multiply;
+}
+
+.header-textContainer:hover>.header-text {
+    font-style: italic;
+}
+
+.video-background {
+    padding-top: 10vh;
+    width: 100%;
+}
+
+/* Remove Mobile Header */
+#header-mobile {
+    display: none;
+}
+
+/* Schlafberatung */
+
+#schlafberatung {
+    background-image: url('../Dateien/Images/angebote/Schlafberatung_overlay.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    margin-bottom: 5%;
+    flex-direction: column;
+    align-items: center;
+    height: (70vh, 100%);
+    border-radius: 1px;
+}
+
+.title-section {
+    width: 100%;
+    height: 10vh;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-text {
+    margin: 0;
+    font-size: 200%;
+    font-weight: 900;
+    background-color: #12CFFC;
+    color: #041f29;
+    padding-left: 5px;
+    padding-right: 7px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.subtitle-section {
+    width: 100%;
+    height: (15vh, 20vh);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.subtitle-section .subtitle-section-card {
+    width: 90%;
+    height: 90%;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.269);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.subtitle-section .subtitle-section-card p {
+    font-size: 110%;
+    margin: 0;
+    padding: 5px;
+}
+
+.title-subtext {
+    color: #041f29;
+    text-align: center;
+}
+
+.content-section {
+    width: 100%;
+    height: (33vh, 100%);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-part {
+    width: 30%;
+    height: 90%;
+    margin: 1%;
+}
+
+.content-text {
+    font-size: 110%;
+    margin-top: 20px;
+}
+
+.content-text p {
+    margin: 0;
+    padding: 3px;
+}
+
+.content-text .content-text-title {
+    padding-bottom: 5px;
+}
+
+.final-section {
+    width: 100%;
+    height: 5vh;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.final-section p {
+    margin: 0;
+    padding-top: 5px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.info-point {
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+}
+
+.info-icon {
+    border: 2px solid black;
+    cursor: pointer;
+    padding: 2px;
+}
+
+.modal {
+    position: absolute;
+    height: (13vh, 25vh);
+    width: 90%;
+    background-color: rgba(245, 222, 179, 0.95);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 999;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.info-point:hover .modal {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-content {
+    padding: 2px;
+}
+
+/* Laser */
+
+#laser {
+    background-image: url('../Dateien/Images/angebote/Laser_overlay.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    margin-bottom: 5%;
+    flex-direction: column;
+    align-items: center;
+    height: 65vh;
+    border-radius: 1px;
+}
+
+.content-part-tiny {
+    width: 20%;
+    height: 90%;
+    margin: 1%;
+}
+
+.content-text-tiny {
+    font-size: 110%;
+    margin-top: 20px;
+}
+
+.content-text-tiny p {
+    margin: 0;
+    padding: 3px;
+}
+
+.content-text-tiny .content-text-title-tiny {
+    padding-bottom: 5px;
+}
+
+.content-part-laser {
+    width: 70%;
+    height: 90%;
+    margin: 1%;
+}
+
+.content-text-laser {
+    font-size: 110%;
+    margin-top: 20px;
+}
+
+.content-text-laser p {
+    margin: 0;
+    padding: 3px;
+}
+
+.content-text-laser .content-text-title-laser {
+    padding-bottom: 5px;
+}
+
+/* Beratung */
+
+#beratung {
+    background-image: url('../Dateien/Images/angebote/Beratung_overlay.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    margin-bottom: 5%;
+    flex-direction: column;
+    align-items: center;
+    height: 70vh;
+    border-radius: 1px;
+}
+
+.content-part-beratung {
+    width: 45%;
+    height: 90%;
+    margin: 1%;
+}
+
+.content-text-beratung {
+    font-size: 110%;
+    margin-top: 20px;
+}
+
+.content-text-beratung p {
+    margin: 0;
+    padding: 3px;
+}
+
+.content-text-beratung .content-text-title-beratung {
+    padding-bottom: 5px;
+}
+
+.title-section-beratung {
+    width: 100%;
+    height: 10vh;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.final-section-beratung {
+    width: 100%;
+    height: 5vh;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.final-section-beratung p {
+    margin: 0;
+    padding-top: 5px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+/* Footer */
+
+#footer {
+    background-color: #041f29;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5vh;
+}
+
+.footer_waves {
+    position: relative;
+    width: 100%;
+    height: 15vh;
+    margin-bottom: -7px;
+    min-height: 100px;
+    max-height: 150px;
+}
+
+.footer_flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.footer_content {
+    position: relative;
+    height: 100%;
+    text-align: center;
+    background-color: white;
+}
+
+.footer_content_div {
+    margin: 50px;
+}
+
+.footer_content_text {
+    font-weight: 600;
+    font-size: large;
+    font-family: '', sans-serif;
+    background-color: #12CFFC;
+    color: #041f29;
+    padding-left: 5px;
+    padding-right: 7px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    position: relative;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+.footer_content_text::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: currentColor;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease-in-out;
+}
+
+.footer_content_text:hover::before {
+    transform: scaleX(1);
+}
+
+.footer_content_text_active {
+    font-weight: 600;
+    font-size: large;
+    font-family: '', sans-serif;
+    background-color: #12CFFC;
+    color: #041f29;
+    padding-left: 5px;
+    padding-right: 7px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    position: relative;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+.footer_content_text_active::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: currentColor;
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: transform 0.3s ease-in-out;
+}
+
+.footer_content_text_active:hover::before {
+    transform: scaleX(0);
+}
+
+/*Animation*/
+
+.footer_parallax>use {
+    animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
+}
+
+.footer_parallax>use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 12s;
+}
+
+.footer_parallax>use:nth-child(2) {
+    animation-delay: -4s;
+    animation-duration: 15s;
+}
+
+.footer_parallax>use:nth-child(3) {
+    animation-delay: -6s;
+    animation-duration: 18s;
+}
+
+.footer_parallax>use:nth-child(4) {
+    animation-delay: -8s;
+    animation-duration: 23s;
+}
+
+@keyframes move-forever {
+    0% {
+        transform: translate3d(-90px, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(85px, 0, 0);
+    }
+}
+
+/* Media Queries for mobile */
+
+@media only screen and (max-width: 768px) {
+
+    #header {
+        display: none;
+    }
+
+    #header-mobile {
+        display: block;
+        overflow: hidden;
+    }
+
+    .video-background-mobile {
+        margin-top: 10vh;
+        height: 30vh;
+        object-fit: cover;
+    }
+
+    .header-textContainer-mobile {
+        margin-top: 10vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #041f29;
+        height: 30vh;
+        width: 100%;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 100%;
+        font-weight: 900;
+        mix-blend-mode: multiply;
+        text-align: center;
+    }
+
+    .header-text-mobile {
+        font-style: italic;
+    }
+
+    body {
+        font-size: 16px;
+    }
+
+    .nav-item-list li {
+        font-size: 150%;
+    }
+
+    #schlafberatung {
+        height: 100%;
+        padding-bottom: 5vh;
+    }
+
+    .title-text {
+        font-size: 2.5rem;
+        margin-top: 40px;
+    }
+
+    .subtitle-section {
+        height: 25vh;
+        margin-top: 60px;
+    }
+
+    .title-section-beratung {
+        height: 12vh;
+        margin-top: 20px;
+    }
+
+    .final-section,
+    .final-section-beratung {
+        height: 8vh;
+        margin-top: 40px;
+    }
+
+    .paragraph-container {
+        margin: 15px;
+    }
+
+    .paragraph-title {
+        font-size: 150%;
+    }
+
+    .header-textContainer {
+        font-size: 150%;
+    }
+
+    .header-textBackground {
+        padding: 0px 5px 0px 5px;
+    }
+
+    .header-textContainer:hover .header-text {
+        font-size: 120%;
+    }
+
+    .subtitle-section .subtitle-section-card {
+        font-size: 90%;
+    }
+
+    .content-text {
+        font-size: 90%;
+        margin-top: 10px;
+    }
+
+    .content-text p:nth-child(7) {
+        display: none;
+    }
+
+    .content-text .content-text-title {
+        padding-bottom: 3px;
+    }
+
+    .final-section p {
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+
+    .info-point {
+        display: none;
+    }
+
+    .content-part {
+        width: 90%;
+        margin: 2%;
+    }
+
+    #laser {
+        height: 100%;
+        padding-bottom: 7vh;
+        margin-top: 10vh;
+    }
+
+    #laser .content-section {
+        margin-top: 3vh;
+        display: flex;
+        align-items: start;
+    }
+
+    .content-part-tiny {
+        width: 40%;
+        margin-right: 5%;
+        margin-top: 30px;
+    }
+
+    .content-text-tiny {
+        font-size: 90%;
+        margin-top: 10px;
+    }
+
+    .content-text-tiny .content-text-title-tiny {
+        padding-bottom: 3px;
+    }
+
+    .content-part-laser {
+        width: 80%;
+        margin: 2%;
+    }
+
+    .content-text-laser {
+        font-size: 90%;
+        margin-top: 30px;
+    }
+
+    .content-text-laser span {
+        display: none;
+    }
+
+    .content-text-laser .content-text-title-laser {
+        padding-bottom: 3px;
+    }
+
+    #laser .final-section p span {
+        display: none;
+    }
+
+    #laser .final-section {
+        margin-top: 0;
+    }
+
+    #beratung {
+        height: 100%;
+        padding-bottom: 7vh;
+        margin-top: 15vh;
+    }
+
+    #beratung .title-section-beratung .title-text span {
+        display: none;
+    }
+
+    #beratung .content-section {
+        margin-top: 10vh;
+        display: flex;
+        align-items: start;
+        margin-top: 100px;
+    }
+
+    .content-part-beratung {
+        width: 80%;
+        margin: 2%;
+    }
+
+    .content-text-beratung {
+        font-size: 90%;
+        margin-top: 10px;
+    }
+
+    .content-text-beratung .content-text-title-beratung {
+        padding-bottom: 3px;
+    }
+
+    .title-section-beratung {
+        margin-top: 15px;
+    }
+
+    .final-section-beratung p {
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+
+    .final-section-beratung span {
+        display: none;
+    }
+
+    #footer {
+        height: auto;
+    }
+
+    .footer_content {
+        flex-wrap: wrap;
+    }
+
+    .footer_content_div {
+        width: 50%;
+        padding: 10px;
+    }
+
+    .footer_content_text_active,
+    .footer_content_text {
+        font-size: 130%;
+    }
+}

@@ -103,7 +103,7 @@ body {
 }
 
 .home {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../Dateien/Images/Home3.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../Dateien/Images/Home.jpg);
     background-size: 40%;
     background-position-x: 66%;
     background-position-y: 40%;
@@ -207,4 +207,72 @@ body {
 .contact:hover>.flex-about-contact {
     opacity: 1;
     transition-delay: 0.2s;
+}
+
+/* Media queries for mobile */
+@media screen and (max-width: 768px) {
+
+    .home {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../Dateien/Images/Home_cut.jpg);
+        background-size: cover;
+    }
+
+    .flex-title-home {
+        transform: rotate(0deg);
+        top: initial;
+        font-size: 10vw;
+    }
+
+    .flex-about-home {
+        top: initial;
+        font-size: 2vw;
+    }
+
+    .about {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../Dateien/Images/wochenbett_cut.jpg);
+        background-size: cover;
+    }
+
+    .flex-title-about {
+        transform: rotate(0deg);
+        top: initial;
+        font-size: 10vw;
+    }
+
+    .flex-about-about {
+        top: initial;
+        font-size: 2vw;
+    }
+
+    .work {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../Dateien/Images/angebote_cut.jpg);
+        background-size: cover;
+    }
+
+    .flex-title-work {
+        transform: rotate(0deg);
+        top: initial;
+        font-size: 10vw;
+    }
+
+    .flex-about-work {
+        top: initial;
+        font-size: 2vw;
+    }
+
+    .contact {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../Dateien/Images/kontakt_cut.jpg);
+        background-size: cover;
+    }
+
+    .flex-title-contact {
+        transform: rotate(0deg);
+        top: initial;
+        font-size: 10vw;
+    }
+
+    .flex-about-contact {
+        top: initial;
+        font-size: 2vw;
+    }
 }

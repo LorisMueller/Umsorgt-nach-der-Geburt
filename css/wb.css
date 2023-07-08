@@ -1,0 +1,754 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Raleway', sans-serif;
+    background-color: #041f29;
+}
+
+nav {
+    width: 100%;
+    height: 10vh;
+    background-color: #041f29;
+    position: fixed;
+    z-index: 100;
+    box-shadow: 0 4px 4px 0 rgb(18 207 252 / 7%);
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav-item-list {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-item-list li {
+    list-style-type: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    font-size: 200%;
+    font-family: 'Montserrat Alternates', 'sans-serif';
+}
+
+
+/*nav-item-list children 1*/
+
+.nav-item-list li:nth-child(1) {
+    width: 10vw;
+}
+
+.nav-item-list li:nth-child(1) a {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.back-icon {
+    height: 30px;
+    width: 30px;
+}
+
+.nav-item-list li:nth-child(3) {
+    width: 10vw;
+}
+
+.section {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.paragraph {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.paragraph-title {
+    padding: 0;
+    margin: 0;
+    padding-top: 3%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.paragraph-title h1 {
+    font-size: 200%;
+}
+
+.paragraph-container {
+    font-family: 'Ubuntu', sans-serif;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.paragraph-container .cards {
+    margin-right: 4%;
+    margin-left: 4%;
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.paragraph-container .cards:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    widows: 50%;
+    height: 100%;
+    background: rgba(255, 255, 255, .1);
+    z-index: 20;
+    pointer-events: none;
+}
+
+.paragraph-container .cards:nth-child(1) {
+    background: linear-gradient(45deg, #1C3DE6, #12CFFC);
+}
+
+.paragraph-container .cards:nth-child(1) .overlay {
+    background: linear-gradient(45deg, #1C3DE6, #12CFFC);
+}
+
+.paragraph-container .cards:nth-child(2) {
+    background: linear-gradient(45deg, #12CCFC, #7E11F2);
+}
+
+.paragraph-container .cards:nth-child(2) .overlay {
+    background: linear-gradient(45deg, #12CCFC, #7E11F2);
+}
+
+.paragraph-container .cards:nth-child(3) {
+  background: linear-gradient(45deg, #7E11F2, #1C3DE6);
+}
+
+.paragraph-container .cards:nth-child(3) .overlay {
+  background: linear-gradient(45deg, #7E11F2, #1C3DE6);
+}
+
+.paragraph-container .cards .imgBx {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.paragraph-container .cards .imgBx h2 {
+    margin: 10px 0 0;
+    padding: 0;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.paragraph-container .cards .overlay {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+    cursor: pointer;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+.paragraph-container .cards .overlay:hover {
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: none;
+    opacity: 0.9;
+    border-radius: 0;
+}
+
+.paragraph-container .cards .overlay:before {
+    content: 'Lesen';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: #fff;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-delay: 0.5s;
+}
+
+.paragraph-container .cards .overlay:hover:before {
+    display: none;
+    transition-delay: 0s;
+}
+
+.paragraph-container .cards .card_content {
+    padding: 20px;
+    box-sizing: border-box;
+    z-index: 1;
+    pointer-events: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0s;
+    color: #fff;
+}
+
+.paragraph-container .cards .overlay:hover~.card_content {
+    opacity: 1;
+    visibility: visible;
+    transition: 0.2s;
+    transition-delay: 0.5s;
+}
+
+.paragraph-container .cards .card_content h2 {
+    margin: 0;
+    padding: 0;
+}
+
+.paragraph-container .cards .card_content p {
+    font-size: 22px;
+}
+
+
+/* Start -- Header - Video - Title */
+
+#header {
+    background-color: #041f29;
+    height: 100vh;
+}
+
+.header-textContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #041f29;
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 200%;
+    font-weight: 900;
+    mix-blend-mode: multiply;
+    transition: 1.5s ease;
+}
+
+.header-textBackground {
+    padding: 0px 10px 0px 10px;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-textContainer:hover {
+    transition: 1.5s ease;
+    mix-blend-mode: unset;
+    background-color: transparent;
+}
+
+.header-textContainer:hover>.header-textBackground {
+    transition: 1.5s ease;
+    background-color: #041f29;
+    mix-blend-mode: multiply;
+}
+
+.header-textContainer:hover>.header-text {
+    font-style: italic;
+}
+
+.video-background {
+    padding-top: 10vh;
+    width: 100%;
+}
+
+/* Remove Mobile Header */
+#header-mobile {
+    display: none;
+}
+
+/* End -- Header - Video - Title */
+
+.picture {
+    height: 100%;
+    width: 50vw;
+}
+
+.text {
+    width: 50vw;
+    background-color: #041f29;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.text-container {
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.text-h1 {
+    font-family: '', sans-serif;
+    color: #041f29;
+    display: inline-block;
+}
+
+.text-h1 span {
+    background-color: #12CFFC;
+    padding-left: 5px;
+    padding-right: 7px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.h4-container {
+    height: 83%;
+}
+
+#first-h4 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 120%;
+    line-height: 25px;
+    text-align: left;
+}
+
+.zoom-container {
+    display: block;
+    overflow: hidden;
+}
+
+#first-picture {
+    background-image: url(../Dateien/Images/wochenbett/ernaehrung_neugeborenes.png);
+    filter: grayscale(0%);
+    background-size: cover;
+    transition: .5s ease;
+}
+
+#first-zoom:hover #first-picture {
+    transform: scale(1.05);
+}
+
+#first-picture:hover #first-overlay {
+    opacity: 0;
+    cursor: pointer;
+}
+
+#first-overlay {
+    backdrop-filter: grayscale(100%);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    transition: .5s ease;
+    overflow: hidden;
+    background-color: rgba(28, 61, 230, 0.24);
+}
+
+#second-picture {
+    background-image: url(../Dateien/Images/wochenbett/kosten1.jpg);
+    filter: grayscale(0%);
+    background-size: cover;
+    transition: .5s ease;
+}
+
+#second-picture:hover {
+    filter: grayscale(0%);
+}
+
+#second-zoom:hover #second-picture {
+    transform: scale(1.05);
+}
+
+#second-picture:hover #second-overlay {
+    opacity: 0;
+    cursor: pointer;
+}
+
+#second-overlay {
+    backdrop-filter: grayscale(100%);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    transition: .5s ease;
+    overflow: hidden;
+    background-color: rgba(18, 207, 252, 0.3);
+}
+
+#second-h4 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 160%;
+    line-height: 40px;
+    text-align: center;
+}
+
+#third-picture {
+    background-image: url(../Dateien/Images/wochenbett/kindsverlust.jpg);
+    filter: grayscale(0%);
+    background-size: cover;
+    transition: .5s ease;
+}
+
+#third-zoom:hover #third-picture {
+    transform: scale(1.05);
+}
+
+#third-picture:hover #third-overlay {
+    opacity: 0;
+    cursor: pointer;
+}
+
+#third-overlay {
+    backdrop-filter: grayscale(100%);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    transition: .5s ease;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.187);
+}
+
+#footer {
+    background-color: #041f29;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5vh;
+}
+
+.footer_waves {
+    position: relative;
+    width: 100%;
+    height: 15vh;
+    margin-bottom: -7px;
+    min-height: 100px;
+    max-height: 150px;
+}
+
+.footer_flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.footer_content {
+    position: relative;
+    height: 100%;
+    text-align: center;
+    background-color: white;
+}
+
+.footer_content_div {
+    margin: 50px;
+}
+
+.footer_content_text {
+    font-weight: 600;
+    font-size: large;
+    font-family: '', sans-serif;
+    background-color: #12CFFC;
+    color: #041f29;
+    padding-left: 5px;
+    padding-right: 7px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    position: relative;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+.footer_content_text::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: currentColor;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease-in-out;
+}
+
+.footer_content_text:hover::before {
+    transform: scaleX(1);
+}
+
+.footer_content_text_active {
+    font-weight: 600;
+    font-size: large;
+    font-family: '', sans-serif;
+    background-color: #12CFFC;
+    color: #041f29;
+    padding-left: 5px;
+    padding-right: 7px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    position: relative;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+.footer_content_text_active::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: currentColor;
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: transform 0.3s ease-in-out;
+}
+
+.footer_content_text_active:hover::before {
+    transform: scaleX(0);
+}
+
+
+/*Animation*/
+
+.footer_parallax>use {
+    animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
+}
+
+.footer_parallax>use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 12s;
+}
+
+.footer_parallax>use:nth-child(2) {
+    animation-delay: -4s;
+    animation-duration: 15s;
+}
+
+.footer_parallax>use:nth-child(3) {
+    animation-delay: -6s;
+    animation-duration: 18s;
+}
+
+.footer_parallax>use:nth-child(4) {
+    animation-delay: -8s;
+    animation-duration: 23s;
+}
+
+@keyframes move-forever {
+    0% {
+        transform: translate3d(-90px, 0, 0);
+    }
+    100% {
+        transform: translate3d(85px, 0, 0);
+    }
+}
+
+
+/* Media Queries for mobile*/
+
+@media only screen and (max-width: 768px) {
+
+    #header {
+        display: none;
+    }
+
+    #header-mobile {
+        display: block;
+        overflow: hidden;
+    }
+
+    .video-background-mobile {
+        margin-top: 10vh;
+        height: 30vh;
+        object-fit: cover;
+    }
+
+    .header-textContainer-mobile {
+        margin-top: 10vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #041f29;
+        height: 30vh;
+        width: 100%;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 100%;
+        font-weight: 900;
+        mix-blend-mode: multiply;
+        text-align: center;
+    }
+
+    .header-text-mobile {
+        font-style: italic;
+    }
+
+    .waves {
+        height: 40px;
+        min-height: 40px;
+    }
+    .content {
+        height: 30vh;
+    }
+    h1 {
+        font-size: 24px;
+    }
+
+    .nav-item-list {
+        justify-content: space-evenly;
+    }
+
+    .nav-item-list li {
+        font-size: 150%;
+    }
+
+    .header-textContainer {
+        font-size: 150%;
+        height: 50vh;
+    }
+
+    .paragraph-container {
+        margin: 10px;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    #header {
+        height: 70vh;
+    }
+
+    .section {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .zoom-container {
+        width: 100%;
+    }
+
+    .picture {
+        width: 100%;
+        height: 50vh;
+    }
+
+    .text {
+        width: 100%;
+    }
+
+    .text-container {
+        padding: 15px;
+    }
+
+    .text-h1 {
+        font-size: 180%;
+    }
+
+    .h4-container {
+        height: auto;
+    }
+
+    #footer {
+        height: auto;
+    }
+
+    .footer_content {
+        flex-wrap: wrap;
+    }
+
+    .footer_content_div {
+        width: 50%;
+        padding: 10px;
+    }
+
+    .footer_content_text_active,
+    .footer_content_text {
+        font-size: 130%;
+    }
+
+    .paragraph-container .cards {
+        width: 100%;
+        height: 300px;
+    }
+
+    .paragraph {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: 110%;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+    }
+
+    .paragraph-container {
+        font-family: 'Ubuntu', sans-serif;
+        position: relative;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .paragraph-container .cards .card_content p {
+        font-size: 17px;
+    }
+    
+}
