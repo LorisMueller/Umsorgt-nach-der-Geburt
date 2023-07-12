@@ -178,7 +178,8 @@ a {
     margin-bottom: 5%;
     flex-direction: column;
     align-items: center;
-    height: (70vh, 100%);
+    height: 100%;
+    padding-bottom: 8vh;
     border-radius: 1px;
 }
 
@@ -334,7 +335,8 @@ a {
     margin-bottom: 5%;
     flex-direction: column;
     align-items: center;
-    height: 65vh;
+    height: 100%;
+    padding-bottom: 8vh;
     border-radius: 1px;
 }
 
@@ -381,7 +383,7 @@ a {
 /* Beratung */
 
 #beratung {
-    background-image: url('../Dateien/Images/angebote/Beratung_overlay.png');
+    background-image: url('../Dateien/Images/angebote/beratung_overlay.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -389,7 +391,8 @@ a {
     margin-bottom: 5%;
     flex-direction: column;
     align-items: center;
-    height: 70vh;
+    height: 100%;
+    padding-bottom: 8vh;
     border-radius: 1px;
 }
 
