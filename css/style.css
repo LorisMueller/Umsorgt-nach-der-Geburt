@@ -346,3 +346,93 @@ body {
     }
 }
 
+
+/* Media queries for Samsung Internet */
+@supports (-webkit-overflow-scrolling: touch) {
+    .flex-container {
+        flex-direction: column;
+    }
+
+    .flex-title {
+        transform: rotate(0deg) !important;
+        font-size: 10vw;
+    }
+
+    .flex-about {
+        padding: 0%;
+        border: 0px solid #f1f1f1;
+    }
+
+    .flex-slide {
+        overflow: auto;
+        overflow-x: hidden;
+    }
+
+    .flex-slide p {
+        font-size: 2em;
+    }
+
+    .flex-slide ul li {
+        font-size: 2em;
+    }
+
+    .home {
+        background-size: cover;
+    }
+
+    .flex-title-home {
+        transform: rotate(0deg);
+        top: initial;
+        font-size: 10vw;
+    }
+
+    .flex-about-home {
+        top: initial;
+        font-size: 2vw;
+    }
+
+    .about {
+        background-size: cover;
+    }
+
+    .flex-title-about {
+        transform: rotate(0deg);
+        top: initial;
+        font-size: 10vw;
+    }
+
+    .flex-about-about {
+        top: initial;
+        font-size: 2vw;
+    }
+
+    .work {
+        background-size: cover;
+    }
+
+    .flex-title-work {
+        transform: rotate(0deg);
+        top: initial;
+        font-size: 10vw;
+    }
+
+    .flex-about-work {
+        top: initial;
+        font-size: 2vw;
+    }
+
+    .contact {
+        background-size: cover;
+    }
+
+    .flex-title-contact {
+        transform: rotate(0deg);
+        top: initial;
+        font-size: 10vw;
+    }
+
+    .flex-about-contact {
+        top: initial;
+        font-size: 2vw;
+    }
+}
