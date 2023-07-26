@@ -196,6 +196,10 @@ body {
         background-size: cover;
     }
 
+    .flex-container {
+        flex-direction: column;
+    }
+
     .flex-title-home {
         transform: rotate(0deg);
         top: initial;
