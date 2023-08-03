@@ -605,7 +605,7 @@ a {
         position: absolute;
         top: 0;
         left: 0;
-        background: #041f29;
+        background: #041f293d;
         height: 30vh;
         width: 100%;
         color: #fff;
@@ -614,12 +614,12 @@ a {
         align-items: center;
         font-size: 100%;
         font-weight: 900;
-        mix-blend-mode: multiply;
         text-align: center;
     }
 
     .header-text-mobile {
         font-style: italic;
+        color: white;
     }
 
     body {
@@ -636,7 +636,7 @@ a {
     }
 
     .title-text {
-        font-size: 2.5rem;
+        font-size: 1.5rem;
         margin-top: 40px;
     }
 
@@ -763,18 +763,21 @@ a {
     #beratung {
         height: 100%;
         padding-bottom: 7vh;
-        margin-top: 15vh;
+        margin-top: 10vh;
     }
 
     #beratung .title-section-beratung .title-text span {
         display: none;
     }
 
+    #beratung .title-section-beratung .title-text {
+        margin-top: 100px;
+    }
+
     #beratung .content-section {
-        margin-top: 10vh;
         display: flex;
         align-items: start;
-        margin-top: 100px;
+        margin-top: 80px;
     }
 
     .content-part-beratung {
