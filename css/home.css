@@ -446,7 +446,7 @@ a {
         position: absolute;
         top: 0;
         left: 0;
-        background: #041f29;
+        background: #041f293d;
         height: 30vh;
         width: 100%;
         color: #fff;
@@ -455,12 +455,12 @@ a {
         align-items: center;
         font-size: 100%;
         font-weight: 900;
-        mix-blend-mode: multiply;
         text-align: center;
     }
 
     .header-text-mobile {
         font-style: italic;
+        color: white;
     }
 
     .waves {

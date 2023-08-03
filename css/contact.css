@@ -458,7 +458,7 @@ a {
         padding: 0;
         display: inline;
     }
-    
+
     .personal_card {
         margin-top: 10vh;
         height: 80vh;
@@ -468,10 +468,6 @@ a {
         margin-top: 5vh;
         padding: 0;
     }
-
-
-
-
 
     #footer {
         height: auto;
@@ -489,5 +485,11 @@ a {
     .footer_content_text_active,
     .footer_content_text {
         font-size: 130%;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .content {
+        padding-top: 18vh;
     }
 }
