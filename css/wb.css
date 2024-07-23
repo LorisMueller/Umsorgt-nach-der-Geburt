@@ -60,6 +60,10 @@ a {
     width: 30px;
 }
 
+.undg-logo {
+    height: 50px;
+}
+
 .nav-item-list li:nth-child(3) {
     width: 10vw;
 }
@@ -493,6 +497,12 @@ a {
 
 .footer_content_div {
     margin: 50px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.main {
+    margin-top: 50px;
 }
 
 .footer_content_text {
@@ -709,8 +719,13 @@ a {
         flex-wrap: wrap;
     }
 
+    .footer_flex {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
     .footer_content_div {
-        width: 50%;
+        width: 60%;
         padding: 10px;
     }
 
