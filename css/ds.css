@@ -8,6 +8,7 @@ body {
     height: 100%;
     font-family: 'Raleway', sans-serif;
     background-color: #041f29;
+    color: white;
 }
 
 nav {
@@ -119,172 +120,13 @@ a {
 /* CONTENT */
 
 .content {
-    padding-top: 10vh;
-    height: 130vh;
+    padding: 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.content_top {
-    height: 70%;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-.content_left {
-    height: 100%;
-    width: 35%;
-    margin-right: 2%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.personal_card {
-    height: 90%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-    border-radius: 10px;
-}
-
-.personal_title {
-    font-family: '', sans-serif;
-    color: #041f29;
-    display: inline-block;
-    font-size: 25px;
-    font-weight: 600;
-}
-
-.personal_title span {
-    background-color: #12CFFC;
-    padding-left: 5px;
-    padding-right: 7px;
-    padding-top: 3px;
-    padding-bottom: 3px;
-}
-
-.personal_info {
-    margin: 3px;
-    text-align: center;
-}
-
-.content_right {
-    height: 100%;
-    width: 48%;
-    margin-left: 2%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.maps_card {
-    height: 55%;
-    width: 100%;
-    border: 3px solid transparent;
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-.links_card {
-    height: calc(35% - 30px);
-    padding-top: 30px;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.links_card .link {
-    margin: 3px;
-    padding-right: 13px;
-    padding-left: 13px;
-    background-color: white;
-    border-radius: 10px;
-    text-align: center;
-    display: flex;
-    align-items: center;
-}
-
-.links_card .link a {
-    text-decoration: none;
-    color: black;
-}
-
-.content_bottom {
-    height: 30%;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-.book_section {
-    height: 100%;
-    width: 85%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.book_card {
-    height: 80%;
-    width: 17%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
-    background-color: white;
-}
-
-.book_card .image {
-    height: 70%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.book_card .image img {
-    height: 93%;
-    object-fit: cover;
-}
-
-.book_card .image .big {
-    height: 100%;
-    object-fit: cover;
-}
-
-.book_card .content {
-    padding: 0;
-    height: 30%;
-    width: auto;
-    text-align: center;
-}
-
-.book_card .content .content_title {
-    font-size: 18px;
-    font-weight: 600;
-    font-family: 'Ubuntu', sans-serif;
-    color: #041f29;
-}
-
-.book_card .content .content_subtitle {
-    color: #041f29;
-}
 
 /* FOOTER */
 
@@ -321,12 +163,6 @@ a {
 
 .footer_content_div {
     margin: 50px;
-    margin-bottom: 0;
-    margin-top: 0;
-}
-
-.main {
-    margin-top: 50px;
 }
 
 .footer_content_text {
@@ -434,14 +270,16 @@ a {
 /*For Mobile*/
 
 @media only screen and (max-width: 768px) {
+    body{
+        text-align: center;
+    }
     .nav-item-list {
         justify-content: space-evenly;
     }
     
     .nav-item-list li {
-        font-size: 150%;
+        font-size: 130%;
     }
-
     .waves {
         height: 40px;
         min-height: 40px;
@@ -458,6 +296,8 @@ a {
 
     .content {
         padding-top: 10vh;
+        padding-left: 25px;
+        padding-right: 25px;
     }
 
     .content_top {
@@ -495,13 +335,8 @@ a {
         flex-wrap: wrap;
     }
 
-    .footer_flex {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
     .footer_content_div {
-        width: 60%;
+        width: 50%;
         padding: 10px;
     }
 
