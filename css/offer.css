@@ -171,145 +171,321 @@ a {
     display: none;
 }
 
-/* Schlafberatung */
-
-#schlafberatung {
-    background-image: url('../Dateien/Images/angebote/Schlafberatung_overlay.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    margin-bottom: 5%;
-    flex-direction: column;
-    align-items: center;
-    height: 100%;
-    padding-bottom: 8vh;
-    border-radius: 1px;
+/* Sections - All same background */
+.schlafberatung-section,
+.laser-section,
+.beratung-section,
+.tragen-section {
+    padding: 2rem 5rem 1rem 5rem;
+    background: #041f29;
 }
 
+/* Title Section */
 .title-section {
-    width: 100%;
-    height: 10vh;
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
+    margin-bottom: 3rem;
 }
 
 .title-text {
-    margin: 0;
-    font-size: 200%;
-    font-weight: 900;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.title-highlight {
     background-color: #12CFFC;
-    color: #041f29;
-    padding-left: 5px;
-    padding-right: 7px;
-    padding-top: 3px;
-    padding-bottom: 3px;
-}
-
-.subtitle-section {
-    width: 100%;
-    height: (15vh, 20vh);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.subtitle-section .subtitle-section-card {
-    width: 90%;
-    height: 90%;
-    padding: 5px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    border-radius: 20px;
-    background-color: rgba(255, 255, 255, 0.269);
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-}
-
-.subtitle-section .subtitle-section-card p {
-    font-size: 110%;
-    margin: 0;
-    padding: 5px;
+    color: #1e293b;
+    padding: 0.5rem 1rem;
+    font-style: italic;
+    border-radius: 0.25rem;
 }
 
 .title-subtext {
-    color: #041f29;
+    color: #d7d7d7;
+    font-size: 1.25rem;
+    font-weight: 500;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Subtitle Section */
+.subtitle-section {
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: center;
+}
+
+.subtitle-card {
+    max-width: 1000px;
+    background-color: white;
+    backdrop-filter: blur(4px);
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 10px 25px -3px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
-.content-section {
-    width: 100%;
-    height: (33vh, 100%);
+.quote {
+    font-size: 1.125rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.description {
+    margin-bottom: 1rem;
+}
+
+/* Content Grid */
+.content-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.content-grid-laser {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.content-grid-beratung {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+/* Content Cards */
+.content-card {
+    background-color: white;
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+}
+
+.content-card:hover {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.content-card-large {
+    background-color: white;
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
     align-items: center;
+    margin-bottom: 1rem;
 }
 
-.content-part {
-    width: 30%;
-    height: 90%;
-    margin: 1%;
+.card-icon {
+    color: #0891b2;
+    margin-right: 0.75rem;
+    flex-shrink: 0;
 }
 
-.content-text {
-    font-size: 110%;
-    margin-top: 20px;
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #1e293b;
 }
 
-.content-text p {
+.card-list {
+    list-style: none;
+    color: #475569;
+}
+
+.card-list li {
+    margin-bottom: 0.5rem;
+}
+
+.laser-content p {
+    margin-bottom: 1rem;
+}
+
+.laser-content strong {
+    color: #1e293b;
+}
+
+/* Cost Cards Section */
+.cost-cards-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.cost-card {
+    background-color: white;
+    border-radius: 0.75rem;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+}
+
+.cost-card:hover {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.cost-icon {
+    width: 64px;
+    height: 64px;
+    background-color: #0891b2;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+}
+
+.cost-icon svg {
+    color: white;
+    width: 32px;
+    height: 32px;
+}
+
+.cost-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #1e293b;
+    margin-bottom: 0.5rem;
+}
+
+.cost-amount {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #0891b2;
+    margin-bottom: 0.5rem;
+}
+
+.cost-description {
+    color: #475569;
+    font-size: 0.875rem;
+}
+
+/* Tragen Section */
+.content-section-tragen {
+    margin-bottom: 3rem;
+}
+
+.tragen-content {
+    background-color: white;
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.tragen-content p {
+    font-size: 1.125rem;
+}
+
+/* Reasons Section */
+.reasons-section {
+    margin-bottom: 3rem;
+}
+
+.reasons-title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 3rem;
+}
+
+.reasons-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.reason-card {
+    background-color: white;
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.reason-card:hover {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.reason-number {
+    width: 48px;
+    height: 48px;
+    background-color: #0891b2;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.reason-card p {
+    font-size: 1rem;
+    color: #475569;
     margin: 0;
-    padding: 3px;
 }
 
-.content-text .content-text-title {
-    padding-bottom: 5px;
-}
-
+/* Final Section */
 .final-section {
-    width: 100%;
-    height: 5vh;
-    margin-top: 25px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     text-align: center;
+    margin-bottom: 3rem;
 }
 
 .final-section p {
-    margin: 0;
-    padding-top: 5px;
-    padding-left: 5%;
-    padding-right: 5%;
+    margin-bottom: 1rem;
+    color: white;
 }
 
-.info-point {
-    width: 100%;
-    margin-top: 20px;
+.process-info {
+    margin-top: 1rem;
+}
+
+/* Info Section */
+.info-section {
     text-align: center;
     position: relative;
     display: inline-block;
+    width: 100%;
 }
 
-.info-icon {
-    border: 2px solid black;
+.info-button {
+    border: 2px solid white;
+    background: transparent;
+    color: white;
+    padding: 0.5rem 1rem;
     cursor: pointer;
-    padding: 2px;
+    border-radius: 0.25rem;
+    font-weight: 500;
+    transition: all 0.3s;
 }
 
-.modal {
+.info-button:hover {
+    background-color: #1e293b;
+    color: white;
+}
+
+.info-modal {
     position: absolute;
-    height: (13vh, 25vh);
     width: 90%;
-    background-color: rgba(245, 222, 179, 0.95);
+    max-width: 600px;
+    background-color: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 0.5rem;
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.3s ease, visibility 0.3s ease;
@@ -317,135 +493,21 @@ a {
     bottom: 100%;
     left: 50%;
     transform: translateX(-50%);
+    margin-bottom: 0.5rem;
 }
 
-.info-point:hover .modal {
+.info-section:hover .info-modal {
     opacity: 1;
     visibility: visible;
 }
 
-.modal-content {
-    padding: 2px;
+.info-content {
+    padding: 1rem;
 }
 
-/* Laser */
-
-#laser {
-    background-image: url('../Dateien/Images/angebote/Laser_overlay.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    margin-bottom: 5%;
-    flex-direction: column;
-    align-items: center;
-    height: 100%;
-    padding-bottom: 8vh;
-    border-radius: 1px;
-}
-
-.content-part-tiny {
-    width: 20%;
-    height: 90%;
-    margin: 1%;
-}
-
-.content-text-tiny {
-    font-size: 110%;
-    margin-top: 20px;
-}
-
-.content-text-tiny p {
-    margin: 0;
-    padding: 3px;
-}
-
-.content-text-tiny .content-text-title-tiny {
-    padding-bottom: 5px;
-}
-
-.content-part-laser {
-    width: 70%;
-    height: 90%;
-    margin: 1%;
-}
-
-.content-text-laser {
-    font-size: 110%;
-    margin-top: 20px;
-}
-
-.content-text-laser p {
-    margin: 0;
-    padding: 3px;
-}
-
-.content-text-laser .content-text-title-laser {
-    padding-bottom: 5px;
-}
-
-/* Beratung */
-
-#beratung {
-    background-image: url('../Dateien/Images/angebote/beratung_overlay.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    margin-bottom: 5%;
-    flex-direction: column;
-    align-items: center;
-    height: 100%;
-    padding-bottom: 8vh;
-    border-radius: 1px;
-}
-
-.content-part-beratung {
-    width: 45%;
-    height: 90%;
-    margin: 1%;
-}
-
-.content-text-beratung {
-    font-size: 110%;
-    margin-top: 20px;
-}
-
-.content-text-beratung p {
-    margin: 0;
-    padding: 3px;
-}
-
-.content-text-beratung .content-text-title-beratung {
-    padding-bottom: 5px;
-}
-
-.title-section-beratung {
-    width: 100%;
-    height: 10vh;
-    margin-top: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.final-section-beratung {
-    width: 100%;
-    height: 5vh;
-    margin-top: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.final-section-beratung p {
-    margin: 0;
-    padding-top: 5px;
-    padding-left: 5%;
-    padding-right: 5%;
+.info-content p {
+    margin-bottom: 1rem;
+    text-align: left;
 }
 
 /* Footer */
@@ -644,182 +706,6 @@ a {
         font-size: 150%;
     }
 
-    #schlafberatung {
-        height: 100%;
-        padding-bottom: 5vh;
-    }
-
-    .title-text {
-        font-size: 1.5rem;
-        margin-top: 40px;
-    }
-
-    .subtitle-section {
-        height: 25vh;
-        margin-top: 60px;
-    }
-
-    .title-section-beratung {
-        height: 12vh;
-        margin-top: 20px;
-    }
-
-    .final-section,
-    .final-section-beratung {
-        height: 8vh;
-        margin-top: 40px;
-    }
-
-    .paragraph-container {
-        margin: 15px;
-    }
-
-    .paragraph-title {
-        font-size: 150%;
-    }
-
-    .header-textContainer {
-        font-size: 150%;
-    }
-
-    .header-textBackground {
-        padding: 0px 5px 0px 5px;
-    }
-
-    .header-textContainer:hover .header-text {
-        font-size: 120%;
-    }
-
-    .subtitle-section .subtitle-section-card {
-        font-size: 90%;
-    }
-
-    .content-text {
-        font-size: 90%;
-        margin-top: 10px;
-    }
-
-    .content-text p:nth-child(7) {
-        display: none;
-    }
-
-    .content-text .content-text-title {
-        padding-bottom: 3px;
-    }
-
-    .final-section p {
-        padding-left: 3%;
-        padding-right: 3%;
-    }
-
-    .info-point {
-        display: none;
-    }
-
-    .content-part {
-        width: 90%;
-        margin: 2%;
-    }
-
-    #laser {
-        height: 100%;
-        padding-bottom: 7vh;
-        margin-top: 10vh;
-    }
-
-    #laser .content-section {
-        margin-top: 3vh;
-        display: flex;
-        align-items: start;
-    }
-
-    .content-part-tiny {
-        width: 40%;
-        margin-right: 5%;
-        margin-top: 30px;
-    }
-
-    .content-text-tiny {
-        font-size: 90%;
-        margin-top: 10px;
-    }
-
-    .content-text-tiny .content-text-title-tiny {
-        padding-bottom: 3px;
-    }
-
-    .content-part-laser {
-        width: 80%;
-        margin: 2%;
-    }
-
-    .content-text-laser {
-        font-size: 90%;
-        margin-top: 30px;
-    }
-
-    .content-text-laser span {
-        display: none;
-    }
-
-    .content-text-laser .content-text-title-laser {
-        padding-bottom: 3px;
-    }
-
-    #laser .final-section p span {
-        display: none;
-    }
-
-    #laser .final-section {
-        margin-top: 0;
-    }
-
-    #beratung {
-        height: 100%;
-        padding-bottom: 7vh;
-        margin-top: 10vh;
-    }
-
-    #beratung .title-section-beratung .title-text span {
-        display: none;
-    }
-
-    #beratung .title-section-beratung .title-text {
-        margin-top: 100px;
-    }
-
-    #beratung .content-section {
-        display: flex;
-        align-items: start;
-        margin-top: 80px;
-    }
-
-    .content-part-beratung {
-        width: 80%;
-        margin: 2%;
-    }
-
-    .content-text-beratung {
-        font-size: 90%;
-        margin-top: 10px;
-    }
-
-    .content-text-beratung .content-text-title-beratung {
-        padding-bottom: 3px;
-    }
-
-    .title-section-beratung {
-        margin-top: 15px;
-    }
-
-    .final-section-beratung p {
-        padding-left: 3%;
-        padding-right: 3%;
-    }
-
-    .final-section-beratung span {
-        display: none;
-    }
 
     #footer {
         height: auto;
