@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/wb.css" rel="stylesheet" type="text/css">
+    <link href="css/mobile-common.css" rel="stylesheet" type="text/css">
     <title>Wochenbett</title>
     <link rel="icon" type="image/png" href="./Dateien/Icons/undg-logo.svg">
     <style>
@@ -28,19 +29,11 @@
     </nav>
 
     <div class="section" id="header">
-        <video autoplay loop class="video-background" src="./Dateien/mp4/wochenbett.mp4"></video>
+        <video autoplay loop muted playsinline preload="metadata" poster="./Dateien/mp4/wochenbett.png" class="video-background" id="wochenbett-header-video" src="./Dateien/mp4/wochenbett.mp4"></video>
         <div class="header-textContainer">
             <div class="header-textBackground">
                 <h2 class="header-text"><em>Ambulante Wochenbettbetreuung</em></h2>
             </div>
-        </div>
-    </div>
-
-    <!--  Mobile Version -->
-    <div id="header-mobile">
-        <img class="video-background-mobile" src="./Dateien/mp4/wochenbett.png"></img>
-        <div class="header-textContainer-mobile">
-            <h2 class="header-text-mobile"><em>Ambulante Wochenbettbetreuung</em></h2>
         </div>
     </div>
 
@@ -55,11 +48,15 @@
                 </div>
                 <div class="overlay"></div>
                 <div class="card_content content_kind">
-                    <p> Gewichtsverlauf<br><br> Nabelpflege<br><br> Abnahme von
-                        Blutteste<br><br> Einnahme von Vit. D<br><br> Körperpflege des
-                        Kindes<br><br> Tragen vom Baby mit verschiedenen Traghilfen <br><br>Beratung zu
-                        Schlaf-,Wach- und Schreiverhalten
-                    </p>
+                    <ul class="care-list">
+                        <li>Gewichtsverlauf</li>
+                        <li>Nabelpflege</li>
+                        <li>Abnahme von Blutteste</li>
+                        <li>Einnahme von Vit. D</li>
+                        <li>Körperpflege des Kindes</li>
+                        <li>Tragen vom Baby mit verschiedenen Traghilfen</li>
+                        <li>Beratung zu Schlaf-,Wach- und Schreiverhalten</li>
+                    </ul>
                 </div>
             </div>
 
@@ -69,10 +66,12 @@
                 </div>
                 <div class="overlay"></div>
                 <div class="card_content">
-                    <p>Beurteilung und Pflege der Rückbildungs- und Wundheilungsvorgänge <br><br> Pflege der Brust
-                        <br><br> Ihr allg. Wohlbefinden in der neuen Situation <br><br> Tipps und Empfehlungen in
-                        der aktuellen Situation
-                    </p>
+                    <ul class="care-list">
+                        <li>Beurteilung und Pflege der Rückbildungs- und Wundheilungsvorgänge</li>
+                        <li>Pflege der Brust</li>
+                        <li>Ihr allg. Wohlbefinden in der neuen Situation</li>
+                        <li>Tipps und Empfehlungen in der aktuellen Situation</li>
+                    </ul>
                 </div>
             </div>
 
@@ -82,8 +81,10 @@
                 </div>
                 <div class="overlay"></div>
                 <div class="card_content">
-                    <p> Offen für alle Fragen in der neuen Situation als Papa <br><br> Wie und wo können Sie ihre
-                        Frau und das Baby unterstützen</p>
+                    <ul class="care-list">
+                        <li>Offen für alle Fragen in der neuen Situation als Papa</li>
+                        <li>Wie und wo können Sie ihre Frau und das Baby unterstützen</li>
+                    </ul>
                 </div>
             </div>
 
@@ -100,9 +101,9 @@
                 <div class="h4-container">
                     <h4 id="first-h4">Ich werde Sie im Bereich des Stillens sehr individuell unterstützen, aber
                         auch in der Ernährung mit dem Schoppen, so dass es für die ganze Familie stimmt.<br>- Alles
-                        rund ums Stillen:<br>Milchbildung, korrekte Anlegetechnik, Milchstau/Brustentzündung,
+                        rund ums Stillen: Milchbildung, korrekte Anlegetechnik, Milchstau/Brustentzündung,
                         Wunde/schmerzende Brustwarzen und Abstillen<br>- Abpumpen der Muttermilch<br>-
-                        Schoppennahrung:<br>Zubereitung und Hygiene</h4>
+                        Schoppennahrung: Zubereitung und Hygiene</h4>
                 </div>
             </div>
         </div>
@@ -116,7 +117,7 @@
     </div>
 
 
-    <div class="section">
+    <div class="section cost-section">
 
         <div class="zoom-container" id="second-zoom">
             <div class="picture" id="second-picture">
@@ -217,5 +218,13 @@
     </div>
 
 </body>
+
+<script>
+    const wochenbettHeaderVideo = document.getElementById('wochenbett-header-video');
+
+    if (wochenbettHeaderVideo) {
+        wochenbettHeaderVideo.playbackRate = 0.78;
+    }
+</script>
 
 </html>

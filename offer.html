@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/offer.css" rel="stylesheet" type="text/css">
+    <link href="css/mobile-common.css" rel="stylesheet" type="text/css">
     <title>Angebote</title>
     <link rel="icon" type="image/png" href="./Dateien/Icons/undg-logo.svg">
     <style>
@@ -28,19 +29,11 @@
     </nav>
 
     <div class="section" id="header">
-        <video autoplay loop class="video-background" src="./Dateien/mp4/Offers.mp4"></video>
+        <video autoplay loop muted playsinline preload="metadata" poster="./Dateien/mp4/offers.png" class="video-background" src="./Dateien/mp4/Offers.mp4"></video>
         <div class="header-textContainer">
             <div class="header-textBackground">
                 <h2 class="header-text"><em>Hier sehen Sie alle meine Angebote</em></h2>
             </div>
-        </div>
-    </div>
-
-    <!--  Mobile Version -->
-    <div id="header-mobile">
-        <img class="video-background-mobile" src="./Dateien/mp4/offers.png"></img>
-        <div class="header-textContainer-mobile">
-            <h2 class="header-text-mobile"><em>Das biete ich Ihnen</em></h2>
         </div>
     </div>
 
@@ -116,7 +109,7 @@
                         <svg class="card-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/>
                         </svg>
-                        <h4 class="card-title">Kinder, die auch Nachts konstant und liebevoll begleiten werden:</h4>
+                        <h4 class="card-title">Kinder, die auch Nachts konstant und liebevoll begleitet werden...</h4>
                     </div>
                     <ul class="card-list">
                         <li>• Schlafen langfristig besser ein und durch</li>
@@ -132,13 +125,15 @@
             </div>
 
             <div class="info-section">
-                <button class="info-button">Weitere Infos</button>
-                <div class="info-modal">
-                    <div class="info-content">
-                        <p>Sie erhalten keinen allgemein gültigen "Fahrplan", der von heute auf morgen funktioniert und ein durchschlafendes Kind verspricht. Viel mehr zeige ich Ihnen auf, wie Sie die Bindung und Beziehung zu Ihrem Kind stärken können und finde mit Ihnen Lösungsansätze, die für ihre Familiensituation, unter Berücksichtigung der Bedürfnisse aller Familienmitglieder, passend sind.</p>
-                        <p>Die 1001kindernacht® Schlafberatung wurde von Sibylle Lüpold ("Ich will bei Euch schlafen" / "Stillen ohne Zwang") entwickelt (www.1001kindernacht.ch). Es handelt sich um eine ganzheitliche und bindungsorientierte Beratung, die sich von verhaltenstherapeutischen Schlaflernmethoden (z.B. der Ferbermethode) klar unterscheidet.</p>
+                <details class="info-disclosure">
+                    <summary class="info-button">Weitere Infos</summary>
+                    <div class="info-modal">
+                        <div class="info-content">
+                            <p>Sie erhalten keinen allgemein gültigen "Fahrplan", der von heute auf morgen funktioniert und ein durchschlafendes Kind verspricht. Viel mehr zeige ich Ihnen auf, wie Sie die Bindung und Beziehung zu Ihrem Kind stärken können und finde mit Ihnen Lösungsansätze, die für ihre Familiensituation, unter Berücksichtigung der Bedürfnisse aller Familienmitglieder, passend sind.</p>
+                            <p>Die 1001kindernacht® Schlafberatung wurde von Sibylle Lüpold ("Ich will bei Euch schlafen" / "Stillen ohne Zwang") entwickelt (www.1001kindernacht.ch). Es handelt sich um eine ganzheitliche und bindungsorientierte Beratung, die sich von verhaltenstherapeutischen Schlaflernmethoden (z.B. der Ferbermethode) klar unterscheidet.</p>
+                        </div>
                     </div>
-                </div>
+                </details>
             </div>
         </div>
     </section>
@@ -186,7 +181,7 @@
 
             <div class="final-section">
                 <p>Die Behandlungen werden nicht von der Krankenkasse übernommen und müssen selber bezahlt werden. Die Kosten sind pro Sitzung/Anwendung, wobei die Therapie nur einige Minuten dauert. Bei der Behandlung nutze ich den modernen Tinnitool Multilaser der Firma DisMark</p>
-                <p>Kosten der Lasertherapie pro Sitzung: 10 CHF - 20 CHF<br>
+                <p>Kosten der Lasertherapie pro Sitzung: 10 - 20 CHF<br>
                 Kosten der Tagesmiete des Lasers (mit Vertrag): 30 CHF</p>
             </div>
         </div>
@@ -199,7 +194,7 @@
                 <h2 class="title-text">
                     <span class="title-highlight">Flaschen- und Formula-Beratung für Babys und Säuglinge</span>
                 </h2>
-                <h3 class="title-subtext">«Sie wollen ihr Baby von Anfang an richtig und gesund ernähren? Stillen ist aber nicht möglich oder Sie wollen nicht stillen?» Ihr Kind oder Sie fühlen sich mit der aktuellen Nahrung nicht optimal?</h3>
+                <h3 class="title-subtext">«Sie wollen ihr Baby von Anfang an richtig und gesund ernähren? Stillen ist aber nicht möglich oder Sie wollen nicht stillen? Ihr Kind oder Sie fühlen sich mit der aktuellen Nahrung nicht optimal?»</h3>
             </div>
 
             <div class="content-grid-beratung">
